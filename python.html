@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding-left: 15px;
+          background-color: #f4f4f4;
+        }
+    
+        header {
+          background-color: #4CAF50;
+          color: white;
+          padding: 20px;
+          text-align: center;
+        }
+    
+        h1 {
+          margin-top: 0;
+        }
+
+        #fileInput{
+            margin-bottom: 15px;
+            font-size: 20px;
+            margin-left: 135px;
+        }
+    
+        .container {
+          width: 80%;
+          margin: 20px auto;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        p {
+          color: #333;
+        }
+    
+        .btn {
+          display: inline-block;
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+          margin-top: 10px;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+
+        }
+    
+        .btn:hover {
+          background-color: #45a049;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <h1>Learn python Programming</h1>
+        <p>Master the world of Python with our comprehensive course!</p>
+      </header>
+    <div class="container">
+    <h1>Course Overview</h1>
+    <p>Welcome to our Python Programming course! Whether you're new to programming or looking to sharpen your skills, 
+        this course will help you master Python, one of the most popular programming languages today. 
+        Python's straightforward syntax and readability make it perfect for beginners, and its powerful libraries and 
+        versatility make it the first choice for professionals in data analysis, machine learning, web development 
+        and more.In this course, you'll start with Python basics and gradually build up to intermediate topics. 
+        Through engaging lectures and hands-on projects, you'll learn not only the theory behind Python programming 
+        but also gain practical experience that can be applied in real-world scenarios.</p>
+    
+    <h2>What You'll Learn</h2>
+    <h3>By the end of this course, you'll have a solid understanding of Python programming and be able to:</h3>
+        
+    <h4>Understand Python's Syntax and Semantics:</h4>
+    <p>Master basic Python syntax</p>
+    <p>Understand Python data types and variables</p>
+    <p>Control flow with conditions and loops</p>
+    
+    <h4>Function and Module Handling:</h4>
+    <p>Create and use functions to simplify code complexity</p>
+    <p>Understand the importance of modules and how to import them</p>
+        
+    <h4>with Data:</h4>
+    <p>Manipulate data using lists, tuples, and dictionaries</p>
+    <p>Perform file operations like reading from and writing to files</p>
+        
+    <h4>Object-Oriented Programming:</h4>
+    <p>the concepts of classes and objects</p>
+    <p>Understand encapsulation, inheritance, and polymorphism</p>
+        
+    <h4>Error Handling and Debugging:</h4>
+    <p>Implement error handling using try, except blocks</p>
+    <p>Debug and fix bugs in Python code</p>
+        
+    <h4>Advanced Python Concepts:</h4>
+    <p>Use list comprehensions and generator expressions for more efficient loops</p>
+        <p>Explore Python's lambda functions and higher-order functions</p>
+        
+        <h4>Real-World Applications:</h4>
+        <p>to web development using Flask or Django</p>
+        <p>Basic concepts of data analysis with pandas and NumPy</p>
+        <p>An overview of machine learning with scikit-learn</p>
+        <h4>Projects and Practical Applications:</h4>
+        <p>Build several mini-projects to consolidate learning</p>
+        <p>Complete a capstone project that combines multiple aspects of Python</p>
+        <p>Each module will include video lectures, reading assignments, practice exercises, and quizzes to test your understanding. You will also participate in discussion forums where you can interact with your peers and instructors to enrich your learning experience.</p>
+        
+        <h4>Course Format</h4>
+        <p>This is a self-paced course designed to take approximately 10-12 weeks, committing 3-5 hours per week. You will have access to all the course materials upon enrollment, which allows you to learn at your own pace and review concepts as needed.</p><br>
+
+        <a href="#" class="btn">Enroll Now</a><br>
+    </div>
+
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Upload File</button>
+        <button onclick="downloadFile()">Download File</button>
+
+        <script>
+            let uploadedFile;
+
+            function uploadFile() {
+                const fileInput = document.getElementById('fileInput');
+                uploadedFile = fileInput.files[0];
+            }
+
+            function downloadFile() {
+                if (uploadedFile) {
+                    const downloadLink = document.createElement('a');
+                    downloadLink.href = URL.createObjectURL(uploadedFile);
+                    downloadLink.download = uploadedFile.name;
+                    downloadLink.click();
+                } else {
+                    alert('Please upload a file first.');
+                }
+            }
+        </script>
+
+</body>
+</html>

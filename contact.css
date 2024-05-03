@@ -1,0 +1,41 @@
+  
+  #contactDetails {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  #contactDetails h1 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: #007bff;
+    text-align: center;
+
+  }
+  
+  #contactDetails p {
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+body{
+    background-color: rgba(0, 0, 255, 0.144);
+}
+
+.login{
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    width: 400px;
+    border: 12px #a1beba;
+	background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+    box-shadow: 10px 10px rgba(255, 255, 255, 0.5);
+}
